@@ -76,3 +76,64 @@ h4 {
         background-color: color-mix(in srgb, var(--primary-color), white 85%);
     }
 }
+
+.heroBanner{
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 2em;
+}
+
+
+.heroBanner_iconPlay{
+    height: 5em;
+    width: 5em;
+    display: none;
+    
+}
+
+.heroBanner_iconPlay img{
+    width: 100%;
+}
+
+.heroBanner_title{
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 1.5em;
+}
+
+.heroBanner_subtitle{
+    color: color-mix(in srgb, var(--primary-color), white 25%);
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.heroBanner_btn{
+    display: inline-block;
+    padding: .9em 2em;
+    background-color: #58c4c4;
+    border-radius: 5px;
+    text-decoration: none;
+    color:white;
+}
+
+@media screen and  (min-width: 48.75em) {
+    .heroBanner{
+        background-color: var(--primary-color);
+       
+    }
+
+    .heroBanner_iconPlay{
+       display: inline-block;
+       align-items: center;
+        
+    }
+
+    .heroBanner_title{
+        color: white;
+    }
+    
+    .heroBanner_subtitle{
+        color: white;
+        
+    }
+}
