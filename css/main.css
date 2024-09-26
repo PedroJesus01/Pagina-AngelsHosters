@@ -54,16 +54,14 @@ h4 {
     }
 
     .top_header_logo {
-        margin-left: 2em;
+        margin-left: 1.5em;
     }
 
     .top_header_nav {
         background-color: initial;
     }
 
-    .top_header_nav ul{
-        margin-right: 2em;
-    }
+   
     .top_header_nav li {
         display: inline-block;
     }
@@ -80,7 +78,9 @@ h4 {
 .heroBanner{
     background-color: #f6f6f6;
     text-align: center;
-    padding: 2em;
+    padding: 1em;
+   
+    
 }
 
 
@@ -99,12 +99,14 @@ h4 {
     margin-top: 0;
     color: var(--primary-color);
     font-size: 1.5em;
+    margin: 1.5em 0;
 }
 
 .heroBanner_subtitle{
     color: color-mix(in srgb, var(--primary-color), white 25%);
     font-size: 1em;
     font-weight: 100;
+    line-height: 1.3em;
 }
 
 .heroBanner_btn{
@@ -115,11 +117,18 @@ h4 {
     text-decoration: none;
     color:white;
 }
-
+/* md */
 @media screen and  (min-width: 48.75em) {
     .heroBanner{
         background-color: var(--primary-color);
+        color: white;
+
        
+    }
+
+    .heroBanner_title{
+        color: white;
+        
     }
 
     .heroBanner_iconPlay{
@@ -127,13 +136,175 @@ h4 {
        align-items: center;
         
     }
-
-    .heroBanner_title{
-        color: white;
-    }
     
     .heroBanner_subtitle{
+        font-weight: bold;
         color: white;
-        
     }
 }
+
+/* lg */
+@media screen and  (min-width: 56.25em){
+    .heroBanner{
+        background-image: url(../images/bg_topo_1198x670.jpg);
+        aspect-ratio: 1198 / 670;
+       display: flex;
+       justify-content: center;
+       align-items: flex-end;
+    
+       
+    }
+
+    .heroBanner .maxWidth{
+        margin: initial;
+        margin-bottom: 4.5em;
+        width: 75%;
+
+    }
+}
+/* xl */
+@media screen and  (min-width: 74em){
+    .heroBanner{
+        background-image: url(../images/bg_topo_1600x1374.jpg);
+        background-position: center top;
+        max-height: 80vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    .heroBanner_title, .heroBanner_subtitle{
+        text-shadow: 2px 1px 3px var(--primary-color);
+    
+    }
+    
+}
+
+.middleContent{
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 2.5em;
+    
+    
+}
+
+.middleContent a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.middleContent_title{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+.middleContent p{
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
+
+.middleContent span[class^="icon-"]{
+    color: var(--primary-color);
+    font-size: 3.5em;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--default-gap);
+}
+
+.col {
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+.col-sm-12 {
+    width: 100%;
+}
+
+@media screen and (min-width: 48.75em) {
+    .col-md-6 {
+        width: calc(50% - var(--default-gap));
+    }
+}
+
+@media screen and (min-width: 74em) {
+    .col-xl-3 {
+        width: calc(25% - var(--default-gap));
+    }
+
+    .col-xl-6 {
+        width: calc(50% - var(--default-gap));
+    }
+}
+
+
+.mainContent {
+    padding: 2em;
+}
+
+.mainContent p {
+    line-height: 1.2;
+}
+
+.mainContent_img img {
+    width: 100%;
+    background-size: cover;
+}
+
+.mainContent_title {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: normal;
+    letter-spacing: .2em;
+    font-size: 1.25em;
+}
+
+.mainContent .row {
+    row-gap: 4em;
+    
+    
+}
+
+
+.mainContent_article {
+    container: main-content / inline-size;
+}
+@container main-content (min-width: 500px) {
+    .mainContent_container {
+        display: flex;
+        gap: var(--default-gap);
+    }
+
+    .mainContent_title {
+        margin-top: 0;
+    }
+
+    .mainContent_img img {
+        max-height: 382px;
+    }
+
+    .mainContent_img {
+        flex: 1 0 50%;
+        background-size: cover;
+    }
+
+    .mainContent_text {
+        flex-grow: 1;
+    }
+
+}
+
+.footer {
+    background: #25303e;
+    color: #83969f;
+    text-align: center;
+    padding: 2em;
+}
+
+   
